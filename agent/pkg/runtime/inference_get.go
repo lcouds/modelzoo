@@ -9,8 +9,8 @@ import (
 	"github.com/lcouds/modelzoo/agent/api/types"
 	"github.com/lcouds/modelzoo/agent/errdefs"
 	"github.com/lcouds/modelzoo/agent/pkg/k8s"
-	apis "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
-	"github.com/lcouds/modelzoo/modelzooetes/pkg/client/listers/modelzetes/v2alpha1"
+	apis "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
+	"github.com/lcouds/modelzoo/modelzooetes/pkg/client/listers/modelzooetes/v2alpha1"
 )
 
 func (r generalRuntime) InferenceGet(namespace, inferenceName string) (

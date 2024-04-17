@@ -10,7 +10,7 @@ import (
 	"github.com/lcouds/modelzoo/agent/api/types"
 	"github.com/lcouds/modelzoo/agent/errdefs"
 	"github.com/lcouds/modelzoo/agent/pkg/k8s"
-	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 	"github.com/lcouds/modelzoo/modelzooetes/pkg/consts"
 )
 

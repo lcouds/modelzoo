@@ -1,17 +1,17 @@
 package controller
 
 import (
-	"github.com/lcouds/modelzoo/agent/api/types"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/kubernetes"
 
-	v2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	"github.com/lcouds/modelzoo/agent/api/types"
+	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 	"github.com/lcouds/modelzoo/modelzooetes/pkg/consts"
 	"github.com/lcouds/modelzoo/modelzooetes/pkg/k8s"
 )
 
-// FunctionFactory wraps modelzetes factory
+// FunctionFactory wraps modelzooetes factory
 type FunctionFactory struct {
 	Factory k8s.FunctionFactory
 }

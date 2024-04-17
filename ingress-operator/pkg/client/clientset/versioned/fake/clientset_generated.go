@@ -10,8 +10,8 @@ package fake
 
 import (
 	clientset "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned"
-	tensorchordv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned/typed/modelzetes/v1"
-	faketensorchordv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned/typed/modelzetes/v1/fake"
+	tensorchordv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned/typed/modelzooetes/v1"
+	faketensorchordv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned/typed/modelzooetes/v1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

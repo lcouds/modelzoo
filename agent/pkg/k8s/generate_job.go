@@ -11,7 +11,7 @@ import (
 
 	"github.com/lcouds/modelzoo/agent/api/types"
 	"github.com/lcouds/modelzoo/agent/pkg/consts"
-	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 	mzconsts "github.com/lcouds/modelzoo/modelzooetes/pkg/consts"
 )
 

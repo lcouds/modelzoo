@@ -3,7 +3,7 @@ package controller
 import (
 	"testing"
 
-	v2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	v2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 )
 
 func Test_makeAnnotations_NoKeys(t *testing.T) {

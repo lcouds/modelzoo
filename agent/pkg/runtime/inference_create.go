@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	ingressv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzetes/v1"
-	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	ingressv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzooetes/v1"
+	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 	"github.com/lcouds/modelzoo/modelzooetes/pkg/consts"
 	corev1 "k8s.io/api/core/v1"
 	v1 "k8s.io/api/core/v1"

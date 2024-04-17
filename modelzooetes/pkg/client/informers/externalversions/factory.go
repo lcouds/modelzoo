@@ -15,7 +15,7 @@ import (
 
 	versioned "github.com/lcouds/modelzoo/modelzooetes/pkg/client/clientset/versioned"
 	internalinterfaces "github.com/lcouds/modelzoo/modelzooetes/pkg/client/informers/externalversions/internalinterfaces"
-	modelzetes "github.com/lcouds/modelzoo/modelzooetes/pkg/client/informers/externalversions/modelzetes"
+	modelzooetes "github.com/lcouds/modelzoo/modelzooetes/pkg/client/informers/externalversions/modelzooetes"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
@@ -233,9 +233,9 @@ type SharedInformerFactory interface {
 	// client.
 	InformerFor(obj runtime.Object, newFunc internalinterfaces.NewInformerFunc) cache.SharedIndexInformer
 
-	Tensorchord() modelzetes.Interface
+	Tensorchord() modelzooetes.Interface
 }
 
-func (f *sharedInformerFactory) Tensorchord() modelzetes.Interface {
-	return modelzetes.New(f, f.namespace, f.tweakListOptions)
+func (f *sharedInformerFactory) Tensorchord() modelzooetes.Interface {
+	return modelzooetes.New(f, f.namespace, f.tweakListOptions)
 }

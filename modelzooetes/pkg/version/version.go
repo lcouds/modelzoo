@@ -28,7 +28,7 @@ import (
 
 var (
 	// Package is filled at linking time
-	Package = "github.com/lcouds/modelzoo/modelzetes"
+	Package = "github.com/lcouds/modelzoo/modelzooetes"
 
 	// Revision is filled with the VCS (e.g. git) revision being used to build
 	// the program at linking time.

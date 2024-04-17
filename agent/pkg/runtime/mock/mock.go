@@ -12,7 +12,7 @@ import (
 	gomock "github.com/golang/mock/gomock"
 	types "github.com/lcouds/modelzoo/agent/api/types"
 	config "github.com/lcouds/modelzoo/agent/pkg/config"
-	v2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	v2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 )
 
 // MockRuntime is a mock of Runtime interface.

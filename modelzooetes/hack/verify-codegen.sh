@@ -4,7 +4,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-SCRIPT_ROOT=$(git rev-parse --show-toplevel)/modelzetes
+SCRIPT_ROOT=$(git rev-parse --show-toplevel)/modelzooetes
 
 DIFFROOT="${SCRIPT_ROOT}/pkg"
 TMP_DIFFROOT="${SCRIPT_ROOT}/_tmp/pkg"

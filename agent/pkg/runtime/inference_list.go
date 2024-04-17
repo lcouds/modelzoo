@@ -3,8 +3,8 @@ package runtime
 import (
 	"sort"
 
-	mv2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
-	modelzetesv2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/client/listers/modelzetes/v2alpha1"
+	mv2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
+	modelzooetesv2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/client/listers/modelzooetes/v2alpha1"
 	"github.com/lcouds/modelzoo/modelzooetes/pkg/consts"
 	appsv1 "k8s.io/api/apps/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
@@ -31,7 +31,7 @@ func (r generalRuntime) InferenceList(namespace string) ([]types.InferenceDeploy
 }
 
 func inferenceList(functionNamespace string,
-	infLister modelzetesv2alpha1.InferenceLister,
+	infLister modelzooetesv2alpha1.InferenceLister,
 	deploymentLister v1.DeploymentLister) ([]types.InferenceDeployment, error) {
 	functions := []types.InferenceDeployment{}
 

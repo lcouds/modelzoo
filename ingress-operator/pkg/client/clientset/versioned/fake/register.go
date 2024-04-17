@@ -9,7 +9,7 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 package fake
 
 import (
-	tensorchordv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzetes/v1"
+	tensorchordv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzooetes/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

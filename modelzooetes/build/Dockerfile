@@ -11,12 +11,12 @@ RUN export GO111MODULE=on  && \
 
 ARG TARGETOS
 ARG TARGETARCH
-RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build -o /src/bin/modelzetes -ldflags "$GO_LDFLAGS" /src/modelzetes/cmd/modelzetes/main.go
+RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build -o /src/bin/modelzooetes -ldflags "$GO_LDFLAGS" /src/modelzooetes/cmd/modelzooetes/main.go
 
 # Final image
 FROM ubuntu:22.04
 LABEL maintainer="modelz-support@tensorchord.ai"
 
-COPY --from=builder /src/bin/modelzetes /usr/bin/modelzetes
-ENTRYPOINT ["/usr/bin/modelzetes"]
+COPY --from=builder /src/bin/modelzooetes /usr/bin/modelzooetes
+ENTRYPOINT ["/usr/bin/modelzooetes"]
 

@@ -22,11 +22,11 @@ import (
 	"k8s.io/client-go/util/workqueue"
 	glog "k8s.io/klog"
 
-	v2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	v2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 	clientset "github.com/lcouds/modelzoo/modelzooetes/pkg/client/clientset/versioned"
 	faasscheme "github.com/lcouds/modelzoo/modelzooetes/pkg/client/clientset/versioned/scheme"
 	informers "github.com/lcouds/modelzoo/modelzooetes/pkg/client/informers/externalversions"
-	listers "github.com/lcouds/modelzoo/modelzooetes/pkg/client/listers/modelzetes/v2alpha1"
+	listers "github.com/lcouds/modelzoo/modelzooetes/pkg/client/listers/modelzooetes/v2alpha1"
 	"github.com/lcouds/modelzoo/modelzooetes/pkg/consts"
 )
 

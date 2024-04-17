@@ -7,7 +7,7 @@ import (
 	netv1 "k8s.io/api/networking/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	faasv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzetes/v1"
+	faasv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzooetes/v1"
 	"github.com/lcouds/modelzoo/ingress-operator/pkg/controller"
 )
 

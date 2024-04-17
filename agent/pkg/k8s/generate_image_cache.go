@@ -6,13 +6,13 @@ import (
 	kubefledged "github.com/lcouds/kube-fledged/pkg/apis/kubefledged/v1alpha3"
 	"github.com/lcouds/modelzoo/agent/api/types"
 	"github.com/lcouds/modelzoo/agent/pkg/consts"
-	modelzetes "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	modelzooetes "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 
-func MakeImageCache(req types.ImageCache, inference *modelzetes.Inference) *kubefledged.ImageCache {
+func MakeImageCache(req types.ImageCache, inference *modelzooetes.Inference) *kubefledged.ImageCache {
 	nodeSlector := map[string]string{
 		consts.LabelServerResource: string(req.NodeSelector),
 	}
@@ -22,9 +22,9 @@ func MakeImageCache(req types.ImageCache, inference *modelzetes.Inference) *kube
 			Namespace: req.Namespace,
 			OwnerReferences: []metav1.OwnerReference{
 				*metav1.NewControllerRef(inference, schema.GroupVersionKind{
-					Group:   modelzetes.SchemeGroupVersion.Group,
-					Version: modelzetes.SchemeGroupVersion.Version,
-					Kind:    modelzetes.Kind,
+					Group:   modelzooetes.SchemeGroupVersion.Group,
+					Version: modelzooetes.SchemeGroupVersion.Version,
+					Kind:    modelzooetes.Kind,
 				}),
 			},
 		},

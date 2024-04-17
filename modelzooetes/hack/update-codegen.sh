@@ -6,7 +6,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-SCRIPT_ROOT=$(git rev-parse --show-toplevel)/modelzetes
+SCRIPT_ROOT=$(git rev-parse --show-toplevel)/modelzooetes_
 
 echo ">> SCRIPT_ROOT ${SCRIPT_ROOT}"
 
@@ -50,10 +50,10 @@ echo ">> Temporary output directory ${TEMP_DIR}"
 chmod +x ${CODEGEN_PKG}/generate-groups.sh
 
 ${CODEGEN_PKG}/generate-groups.sh all \
-    github.com/lcouds/modelzoo/modelzetes/pkg/client github.com/lcouds/modelzoo/modelzetes/pkg/apis \
-    modelzetes:v2alpha1 \
+    github.com/lcouds/modelzoo/modelzooetes/pkg/client github.com/lcouds/modelzoo/modelzooetes/pkg/apis \
+    modelzooetes:v2alpha1 \
     --output-base "${TEMP_DIR}" \
     --go-header-file ${SCRIPT_ROOT}/hack/boilerplate.go.txt
 
 # Copy everything back.
-cp -r "${TEMP_DIR}/github.com/lcouds/modelzoo/modelzetes/." "${SCRIPT_ROOT}/"
+cp -r "${TEMP_DIR}/github.com/lcouds/modelzoo/modelzooetes/." "${SCRIPT_ROOT}/"

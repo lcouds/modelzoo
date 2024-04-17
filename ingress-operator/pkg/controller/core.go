@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	faasv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzetes/v1"
+	faasv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzooetes/v1"
 	"github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned/scheme"
 	faasscheme "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned/scheme"
-	v1 "github.com/lcouds/modelzoo/ingress-operator/pkg/client/informers/externalversions/modelzetes/v1"
-	listers "github.com/lcouds/modelzoo/ingress-operator/pkg/client/listers/modelzetes/v1"
+	v1 "github.com/lcouds/modelzoo/ingress-operator/pkg/client/informers/externalversions/modelzooetes/v1"
+	listers "github.com/lcouds/modelzoo/ingress-operator/pkg/client/listers/modelzooetes/v1"
 	"github.com/lcouds/modelzoo/modelzooetes/pkg/consts"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -25,7 +25,7 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/record"
 	"k8s.io/client-go/util/workqueue"
-	klog "k8s.io/klog"
+	"k8s.io/klog"
 )
 
 const AgentName = "ingress-operator"

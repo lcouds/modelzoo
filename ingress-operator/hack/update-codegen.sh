@@ -34,7 +34,7 @@ chmod +x ${CODEGEN_PKG}/generate-groups.sh
 
 ${CODEGEN_PKG}/generate-groups.sh all \
     github.com/lcouds/modelzoo/ingress-operator/pkg/client github.com/lcouds/modelzoo/ingress-operator/pkg/apis \
-    modelzetes:v1 \
+    modelzooetes:v1 \
     --output-base "${TEMP_DIR}" \
     --go-header-file ${SCRIPT_ROOT}/hack/boilerplate.go.txt
 

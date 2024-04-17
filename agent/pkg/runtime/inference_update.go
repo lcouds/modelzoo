@@ -3,7 +3,7 @@ package runtime
 import (
 	"context"
 
-	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 	inferenceclientset "github.com/lcouds/modelzoo/modelzooetes/pkg/client/clientset/versioned"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

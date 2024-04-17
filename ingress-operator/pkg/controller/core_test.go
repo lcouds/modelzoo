@@ -5,7 +5,7 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	faasv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzetes/v1"
+	faasv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzooetes/v1"
 )
 
 func TestMakeAnnotations(t *testing.T) {

@@ -40,10 +40,10 @@ INGRESS_OPERATOR_GO_LDFLAGS += -s -w \
 		-X $(ROOT)/ingress-operator/pkg/version.buildDate=$(BUILD_DATE)
 
 MODELZOOETES_GO_LDFLAGS += -s -w \
-		-X $(ROOT)/modelzetes/pkg/version.version=$(VERSION) \
-		-X $(ROOT)/modelzetes/pkg/version.gitCommit=$(GIT_COMMIT) \
-		-X $(ROOT)/modelzetes/pkg/version.gitTreeState=$(GIT_TREE_STATE) \
-		-X $(ROOT)/modelzetes/pkg/version.buildDate=$(BUILD_DATE)
+		-X $(ROOT)/modelzooetes/pkg/version.version=$(VERSION) \
+		-X $(ROOT)/modelzooetes/pkg/version.gitCommit=$(GIT_COMMIT) \
+		-X $(ROOT)/modelzooetes/pkg/version.gitTreeState=$(GIT_TREE_STATE) \
+		-X $(ROOT)/modelzooetes/pkg/version.buildDate=$(BUILD_DATE)
 
 .PHONY: agent.image.push
 agent.image.push: ## Build and push docker image

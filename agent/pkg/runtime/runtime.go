@@ -17,11 +17,11 @@ import (
 	"github.com/lcouds/modelzoo/agent/pkg/config"
 	"github.com/lcouds/modelzoo/agent/pkg/event"
 	ingressclient "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned"
-	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
-	apis "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
-	modelzetes "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	"github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
+	apis "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
+	modelzooetes "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 	clientset "github.com/lcouds/modelzoo/modelzooetes/pkg/client/clientset/versioned"
-	modelzv2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/client/informers/externalversions/modelzetes/v2alpha1"
+	modelzoov2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/client/informers/externalversions/modelzooetes/v2alpha1"
 )
 
 type Runtime interface {
@@ -31,7 +31,7 @@ type Runtime interface {
 		buildkitdAddress, buildCtlBin, secret string) error
 	BuildGet(ctx context.Context, namespace, buildName string) (types.Build, error)
 	// cache
-	ImageCacheCreate(ctx context.Context, req types.ImageCache, inference *modelzetes.Inference) error
+	ImageCacheCreate(ctx context.Context, req types.ImageCache, inference *modelzooetes.Inference) error
 	// inference
 	InferenceCreate(ctx context.Context,
 		req types.InferenceDeployment, cfg config.IngressConfig, event string, serverPort int) error
@@ -59,7 +59,7 @@ type Runtime interface {
 type generalRuntime struct {
 	endpointsInformer  corev1.EndpointsInformer
 	deploymentInformer appsv1.DeploymentInformer
-	inferenceInformer  modelzv2alpha1.InferenceInformer
+	inferenceInformer  modelzoov2alpha1.InferenceInformer
 	podInformer        corev1.PodInformer
 
 	kubeClient        kubernetes.Interface
@@ -81,7 +81,7 @@ type generalRuntime struct {
 func New(clientConfig *rest.Config,
 	endpointsInformer corev1.EndpointsInformer,
 	deploymentInformer appsv1.DeploymentInformer,
-	inferenceInformer modelzv2alpha1.InferenceInformer,
+	inferenceInformer modelzoov2alpha1.InferenceInformer,
 	podInformer corev1.PodInformer,
 	kubeClient kubernetes.Interface,
 	ingressClient ingressclient.Interface,

@@ -9,10 +9,10 @@ import (
 	pkgerrors "github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	faasv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzetes/v1"
+	faasv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/apis/modelzooetes/v1"
 	clientset "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned"
 	informers "github.com/lcouds/modelzoo/ingress-operator/pkg/client/informers/externalversions"
-	listers "github.com/lcouds/modelzoo/ingress-operator/pkg/client/listers/modelzetes/v1"
+	listers "github.com/lcouds/modelzoo/ingress-operator/pkg/client/listers/modelzooetes/v1"
 	"github.com/lcouds/modelzoo/ingress-operator/pkg/config"
 	"github.com/lcouds/modelzoo/ingress-operator/pkg/controller"
 	corev1 "k8s.io/api/core/v1"

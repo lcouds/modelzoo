@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	v2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzetes/v2alpha1"
+	v2alpha1 "github.com/lcouds/modelzoo/modelzooetes/pkg/apis/modelzooetes/v2alpha1"
 	. "github.com/lcouds/modelzoo/modelzooetes/pkg/pointer"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

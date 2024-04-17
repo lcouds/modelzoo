@@ -11,5 +11,5 @@ fi
 "$controllergen" \
   crd \
   schemapatch:manifests=./artifacts/crds \
-  paths=./pkg/apis/modelzetes/v2alpha1 \
+  paths=./pkg/apis/modelzooetes/v2alpha1 \
   output:dir=./artifacts/crds

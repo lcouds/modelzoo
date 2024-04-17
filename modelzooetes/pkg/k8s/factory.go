@@ -6,7 +6,7 @@ package k8s
 import (
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/lcouds/modelzoo/modelzooetes/pkg/client/clientset/versioned/typed/modelzetes/v2alpha1"
+	"github.com/lcouds/modelzoo/modelzooetes/pkg/client/clientset/versioned/typed/modelzooetes/v2alpha1"
 )
 
 // FunctionFactory is handling Kubernetes operations to materialise functions into deployments and services

@@ -11,7 +11,7 @@ package versioned
 import (
 	"fmt"
 
-	tensorchordv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned/typed/modelzetes/v1"
+	tensorchordv1 "github.com/lcouds/modelzoo/ingress-operator/pkg/client/clientset/versioned/typed/modelzooetes/v1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
