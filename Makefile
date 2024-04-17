@@ -68,3 +68,6 @@ modelzooetes.image.push: ## Build and push docker image
 	$(eval PLATFORM_DOCKER=$(subst $(DOT),$(SLASH),$(PLATFORM)))
 	$(eval PLATFORM_DOCKER=$(subst $(SPACE),$(COMMA),$(PLATFORM_DOCKER)))
 	docker buildx build --push --platform $(PLATFORM_DOCKER) --build-arg GO_LDFLAGS="$(MODELZOOETES_GO_LDFLAGS)" -f modelzooetes/build/Dockerfile --tag ${BASE_REGISTRY}/${BASE_REGISTRY_USER}/modelzooetes:$(VERSION) .
+
+.PHONY: all.image.push
+all.image.push: agent.image.push autoscaler.image.push ingress-operator.image.push modelzooetes.image.push
