@@ -211,7 +211,12 @@ spec:
                           readOnly:
                             description: The nfs readOnly.
                             type: boolean
-
+                schedulerName:
+                  description: The scheduler name
+                  type: string
+                runtimeClassName:
+                  description: The runtime class name
+                  type: string
       served: true
       storage: true
       subresources: {}

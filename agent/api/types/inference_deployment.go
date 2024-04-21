@@ -62,6 +62,12 @@ type InferenceDeploymentSpec struct {
 
 	// Volumes The volumes used for inference
 	Volumes []VolumeConfig `json:"volumes,omitempty"`
+
+	// SchedulerName The schedulerName used for inference
+	SchedulerName string `json:"schedulerName,omitempty"`
+
+	// RuntimeClassName The runtimeClassName used for inference
+	RuntimeClassName string `json:"runtimeClassName,omitempty"`
 }
 
 // Framework is the inference framework. It is only used to set the default port

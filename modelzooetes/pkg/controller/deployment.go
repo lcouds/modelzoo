@@ -230,6 +230,14 @@ func newDeployment(
 		deploymentSpec.Spec.Template.Spec.SchedulerName = factory.Factory.Config.SchedulerName
 	}
 
+	// 给deployment设置调度器和运行时，请求级配置优先级高于服务级配置
+	if len(inference.Spec.SchedulerName) != 0 {
+		deploymentSpec.Spec.Template.Spec.SchedulerName = inference.Spec.SchedulerName
+	}
+	if len(inference.Spec.RuntimeClassName) != 0 {
+		deploymentSpec.Spec.Template.Spec.RuntimeClassName = &inference.Spec.RuntimeClassName
+	}
+
 	factory.ConfigureReadOnlyRootFilesystem(inference, deploymentSpec)
 	factory.ConfigureContainerUserID(deploymentSpec)
 
