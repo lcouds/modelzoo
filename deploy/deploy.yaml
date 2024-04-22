@@ -697,7 +697,7 @@ spec:
       labels:
         app: autoscaler
     spec:
-      priorityClassName: modelz
+      priorityClassName: modelzoo
       volumes:
       containers:
         - name:  autoscaler
@@ -762,7 +762,7 @@ spec:
       labels:
         app: ingress-operator
     spec:
-      priorityClassName: modelz
+      priorityClassName: modelzoo
       serviceAccountName: ingress-operator
       containers:
         - name: operator
