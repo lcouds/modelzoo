@@ -37,6 +37,8 @@ require (
 	k8s.io/klog v1.0.0
 )
 
+replace github.com/kataras/iris/v12 => github.com/kataras/iris/v12 v12.2.0
+
 require (
 	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
 	github.com/google/pprof v0.0.0-20210720184732-4bb14d4b1be1 // indirect
