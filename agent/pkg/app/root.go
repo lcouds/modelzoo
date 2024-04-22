@@ -7,8 +7,8 @@ package app
 import (
 	"time"
 
-	"github.com/cockroachdb/errors"
 	"github.com/gin-gonic/gin"
+	"github.com/lcouds/errors"
 	"github.com/sirupsen/logrus"
 	cli "github.com/urfave/cli/v2"
 

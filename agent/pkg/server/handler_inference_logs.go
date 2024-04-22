@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cockroachdb/errors"
 	"github.com/gin-gonic/gin"
+	"github.com/lcouds/errors"
 
 	"github.com/lcouds/modelzoo/agent/api/types"
 	"github.com/lcouds/modelzoo/agent/pkg/log"

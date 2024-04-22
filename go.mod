@@ -3,7 +3,6 @@ module github.com/lcouds/modelzoo
 go 1.20
 
 require (
-	github.com/cockroachdb/errors v1.10.0
 	github.com/dchest/uniuri v1.2.0
 	github.com/dgraph-io/ristretto v0.1.1
 	github.com/docker/go-connections v0.4.0
@@ -15,6 +14,7 @@ require (
 	github.com/gorilla/websocket v1.4.2
 	github.com/jackc/pgconn v1.14.1
 	github.com/jackc/pgx/v4 v4.18.1
+	github.com/lcouds/errors v1.11.3
 	github.com/lcouds/forwarder v1.1.0
 	github.com/lcouds/kube-fledged v0.10.0
 	github.com/onsi/ginkgo/v2 v2.11.0
@@ -36,8 +36,6 @@ require (
 	k8s.io/code-generator v0.27.4
 	k8s.io/klog v1.0.0
 )
-
-replace github.com/kataras/iris/v12 => github.com/kataras/iris/v12 v12.2.0
 
 require (
 	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
@@ -61,7 +59,7 @@ require (
 	github.com/emicklei/go-restful/v3 v3.9.0 // indirect
 	github.com/evanphx/json-patch v5.6.0+incompatible // indirect
 	github.com/gabriel-vasile/mimetype v1.4.2 // indirect
-	github.com/getsentry/sentry-go v0.18.0 // indirect
+	github.com/getsentry/sentry-go v0.20.0 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-errors/errors v1.4.2 // indirect
 	github.com/go-logr/logr v1.2.4 // indirect
@@ -125,7 +123,7 @@ require (
 	golang.org/x/sync v0.2.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/text v0.12.0 // indirect
-	golang.org/x/time v0.1.0 // indirect
+	golang.org/x/time v0.3.0 // indirect
 	golang.org/x/tools v0.9.3 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect

@@ -5,9 +5,9 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/cockroachdb/errors"
-	"github.com/sirupsen/logrus"
+	"github.com/lcouds/errors"
 	"github.com/lcouds/modelzoo/agent/client"
+	"github.com/sirupsen/logrus"
 
 	"github.com/lcouds/modelzoo/autoscaler/pkg/prom"
 )

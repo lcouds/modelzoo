@@ -16,7 +16,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cockroachdb/errors"
+	"github.com/lcouds/errors"
 	"github.com/sirupsen/logrus"
 
 	"github.com/lcouds/modelzoo/agent/errdefs"

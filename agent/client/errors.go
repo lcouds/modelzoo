@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cockroachdb/errors"
+	"github.com/lcouds/errors"
 
 	"github.com/lcouds/modelzoo/agent/errdefs"
 )

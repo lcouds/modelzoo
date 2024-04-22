@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cockroachdb/errors"
+	"github.com/lcouds/errors"
 	"github.com/lcouds/modelzoo/agent/api/types"
 )
 

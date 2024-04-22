@@ -8,8 +8,8 @@ import (
 	"flag"
 	"time"
 
-	"github.com/cockroachdb/errors"
-	cli "github.com/urfave/cli/v2"
+	"github.com/lcouds/errors"
+	"github.com/urfave/cli/v2"
 	"k8s.io/klog"
 
 	"github.com/lcouds/modelzoo/modelzooetes/pkg/controller"

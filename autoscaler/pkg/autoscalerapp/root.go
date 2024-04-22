@@ -7,7 +7,7 @@ package autoscalerapp
 import (
 	"time"
 
-	"github.com/cockroachdb/errors"
+	"github.com/lcouds/errors"
 	"github.com/sirupsen/logrus"
 	cli "github.com/urfave/cli/v2"
 
