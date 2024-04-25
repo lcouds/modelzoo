@@ -651,7 +651,7 @@ spec:
             - name: MODELZ_AGENT_EVENT_ENABLED
               value: "false"
             - name: MODELZ_AGENT_INGRESS_ENABLED
-              value: "true"
+              value: "false"
             - name: MODELZ_AGENT_INGRESS_NAMESPACE
               value: "default"
             - name: MODELZ_AGENT_MODELZ_CLOUD_ENABLED
