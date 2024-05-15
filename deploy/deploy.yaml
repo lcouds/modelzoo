@@ -874,10 +874,10 @@ spec:
           resources:
             limits:
               cpu: 1000m
-              memory: 3Gi
+              memory: 6Gi
             requests:
               cpu: 100m
-              memory: 512Mi
+              memory: 6Gi
           image: harbor.xz.com:8443/library/prom/prometheus:v2.41.0
           command:
             - "prometheus"
